@@ -21,7 +21,7 @@ int main()
 
     yylex();
 
-    printf("White Spaces : %d\nWords : %d\nTotal Characters : %d\n",whiteSpace,word,whiteSpace+totalChars);
+    printf("White Spaces : %d\nWords : %d\nTotal Characters : %d\n",whiteSpace,word,totalChars);
 
     return 0;
 }

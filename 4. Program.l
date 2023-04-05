@@ -9,7 +9,7 @@ int count=0;
 
 %%
 "while"|"if"|"else"|"int"|"float" {count++; printf("\tKeyword : %s",yytext);}
-[a-zA-Z_][a-zA-Z0-9_]* {count++; printf("Identifier : %s",yytext);}
+[a-zA-Z_][a-zA-Z0-9_]* {count++; printf("tIdentifier : %s",yytext);}
 "<="|"=="|"="|"++"|"--"|"-"|"*"|"+"|"("|")"|"," {count++; printf("\tOperator : %s",yytext);}
 "{"|"}"|";" {count++; printf("\tSeperators : %s",yytext);}
 -?[0-9]+"."[0-9]+ {count++; printf("\tFloat : %s",yytext);}

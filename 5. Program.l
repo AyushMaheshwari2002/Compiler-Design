@@ -8,8 +8,8 @@ int totalChars=0,whiteSpace=0,word=0;
 %}
 
 %%
-[ \n\t] {whiteSpace++;}
-[^ \n\t]+ {word++; totalChars+=yyleng;}
+[' '\n\t] {whiteSpace++;}
+[^' '\n\t]+ {word++; totalChars+=yyleng;}
 %%
 
 int yywrap() {}
